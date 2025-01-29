@@ -3,59 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static interactive Resume</title>
+    <title>Interactive Resume</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 </head>
 <body>
     <div class="resume-container">
-        <!-- left section -->
+        <!-- Left Section -->
         <div class="left-section">
-            <img src="rimsha" alt="Profile Picture" class="Profile-Picture">
-            <section id="objective">
-                <h3>Career Objective</h3>
-                <p >Goal-driven professional seeking to contribute to a dynamic team and support organizational success.Committed to continuous learning and achieving results.</p>
+            <img src="rimsha" alt="Profile Picture" class="profile-picture">
+            
+                   <section id="personal-details">
+                <h3>Personal Details</h3>
+                <p><i class="fas fa-envelope"></i> <b>Email:</b> <a style="color: white;" href="mailto:rimshamukhtar747@gmail.com">rimshamukhtar747@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> <b>Phone:</b> +92 XXXXXXXXXX</p>
+                <p><i class="fab fa-linkedin"></i> <b>LinkedIn:</b> <a style="color: white;" href="https://www.linkedin.com/in/rimsha-mukhtar-ahmed-6b88632b5" target="_blank">Rimsha's LinkedIn</a></p>
             </section>
-            <section id="Certification">
-                <h3>Certification</h3>
-                <p><b>Artificial Intelligence, Web 3.0 and Metaverse</b> From Governer Sindh's Initiative Karachi(Ongoing)</p>
-
-            </section>
-        </div>
-        <!-- right section -->
-         <div class="right-section">
-            <H1>Static Interactive Resume</H1>
-            <!-- personal information -->
-             <section id="personal-info">
-                <h3>Personal Information</h3>
-                <p><b>Name:</b> Rimsha Mukhtar</p>
-                <p><b>Email:</b><a href="mailto:rimshamukhtar747@gmail.com">rimshamukhtar747@gmail.com</a> </p>
-                <p><b>LinkedIn:</b><a href="https://www.linkedin.com/in/rimsha-mukhtar-ahmed-6b88632b5" target="_blank">www.linkedIn.com</a> </p>
-             </section>
-             <!-- education section -->
-              <section id="Education">
-                <H3>Education</H3>
-                <p><b>Intermediate</b> From Punjab Group of Colleges Sahiwal</p>
-                <p><b>Matriculation</b> From Govt MC Girls High School Sahiwal</p>
-              </section>
-              <!-- skills -->
-              <section id="Skills">
-                <h3>Skills</h3>
+            
+            
+            <section id="technical-skills">
+                <h3>Technical Skills</h3>
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
-                    <li>Typescript</li>
-                    <li>Communication Skills</li>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>React</li>
+                    <li>Next.js</li>
+                    <li>Modern UI/UX Principles</li>
                 </ul>
-              </section>
-              <!-- work-experience -->
-               <section id="Work-Experience">
-                <h3>Work Experience</h3>
-                <p>Seeking an oppertunity as a fresh candidate to start my professional career.</p>
-               </section>
-               <!-- Button to toggle skill section -->
-                <button id="toggle-skills section"><b>Hide/Show Skills</b></button>
+            </section>
+            
+            <section id="soft-skills">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Leadership</li>
+                    <li>Communication</li>
+                    <li>Problem-Solving</li>
+                    <li>Teamwork</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <h1>Rimsha Mukhtar</h1>
+            
+            <section id="about-me">
+                <h3>About Me</h3>
+                <p>I am a passionate front-end developer dedicated to building modern, user-friendly web applications. Currently enhancing my skills in TypeScript and Next.js.</p>
+            </section>
+            
+            <section id="education" style="margin-top: 30px;">
+                <h3>Education</h3>
+                <p><b>Intermediate</b> - Punjab Group of Colleges, Sahiwal</p>
+                <p><b>Matriculation</b> - Govt MC Girls High School, Sahiwal</p>
+                <p><b>Ongoing:</b> Artificial Intelligence, Web 3.0 & Metaverse Course - Governor Sindh IT Initiative, Karachi</p>
+
+            </section>
+            
+            <section id="hobbies-interests" style="margin-top: 30px;">
+                <h3>Hobbies & Interests</h3>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Exploring Web Technologies</li>
+                    <li>Reading Tech Blogs</li>
+                </ul>
+            </section>
+            
+            <section id="personal-goals" style="margin-top: 30px;">
+                <h3>Personal Goals</h3>
+                <p>My goal is to become a proficient full-stack developer and contribute to innovative projects that make an impact.</p>
+            </section>
+
+            <section id="lets-connect">
+                <h3>Let's Connect</h3>
+                <p>Feel free to reach out to me for collaboration or professional networking.</p>
+                <div class="connect-icons">
+                    <a href="mailto:rimshamukhtar747@gmail.com" target="_blank"><i style="color:  #2c3e50;" class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/rimsha-mukhtar-ahmed-6b88632b5" target="_blank"><i style="color:  rgb(0, 0, 138);" class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/rimshamukhtar" target="_blank"><i style="color:  #2c3e50;"class="fab fa-github"></i></a>
+                </div>
+            </section>
+            
+        </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
+
+
