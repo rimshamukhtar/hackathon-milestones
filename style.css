@@ -1,166 +1,70 @@
-/* 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #F5F5F5;
-    padding: 150px;
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
-.resume-container{
-    display: flex;
-    background-color: #F5F5F5;
-    width: 80px;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 0 20px #229799;
-}___
-left sectionj styling
- .left-section{
-    background-color: #424242;
-    color: #F5F5F5;
-    padding: 20px;
-    width: 35px;
-    text-align: center;
-    border-right: 5px solid #229799;
-} 
-.Profile-Picture{
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    margin-top:10px ;
-    margin-bottom: 20px;
-    border: 5px solid #229799;
-}
-h1{
-    font-size: 24px;
-    margin: 10px 0;
-    margin-bottom: 30px;
-    text-align: center;
-}
-h3{
-    font-size: 18px;
-    padding: 2%;
-    margin: 20px 0 10px;
-    color: #424242;
-    border-radius: 10px;
-    box-shadow: 0 0 15px #048e91;
-    margin-top: 5% ;
-    margin-bottom: 5%;
-}
-ul{
-    list-style-type: fill round;
-    padding: 10px;
-    margin: 10px 0;
-}
- ul li{
-    margin: 5px 0;
-} 
-
-right section styling
-.right-section{
-    padding: 20px;
-    width: 65%;
-} 
-
- button{
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
-    box-shadow: 0 0 15px black;
-    cursor: pointer;
-    margin-top: 10px ;
-    font-size: 18px;
-}
-
-button:hover{
-    background-color: aquamarine;
-} 
-
-
- */
-
- body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #F5F5F5;
-    padding: 10px;
-    margin: 0;
-}
-
 .resume-container {
     display: flex;
-    background-color: #ffffff;
-    width: 80%;
+    max-width: 750px;
     margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     overflow: hidden;
 }
-
-/* Left section styling */
 .left-section {
-    flex: 0;
-    background-color:#f0f0f0;
+    background: #2c3e50;
+    color: white;
     padding: 20px;
-    border-right: 2px solid #229799;
-} 
-
-.Profile-Picture {
-    height: 150px;
-    width: 150px;
+    width: 35%;
+    text-align: center;
+}
+.left-section img {
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 20px;
-    border: 5px solid #229799;
+    margin-bottom: 10px;
 }
-
-h3 {
-    font-size: 18px;
-    /* padding-bottom: 10px; */
-    padding: 2%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    text-align: left;
-    color: #2a2a2a;
-    border: 2px solid #229799;
-    box-shadow: 0 0 15px #9acecf;
-    border-radius: 10px ;
+.left-section h3 {
+    margin-top: 20px;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
 }
-
-p {
-    font-size: 14px;
-    margin: 10px 0;
-    text-align: justify;
+.left-section ul {
+    list-style: none;
+    padding: 0;
 }
-
-/* Right section styling */
+.left-section ul li {
+    padding: 5px 0;
+    
+}
 .right-section {
-    flex: 0.5;
-    padding: 10px;
+    padding: 20px;
+    width: 65%;
+    /* margin-top: 20px; */
 }
-
-ul {
-    list-style-type: disc;
+.right-section h1 {
+    color: #2c3e50;
+    padding-left: 80px;
+}
+.right-section h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 5px;
+}
+.right-section ul {
+    list-style: square;
     padding-left: 20px;
-    margin: 10px 0;
 }
-
-li {
-    margin: 5px 0;
+#lets-connect a i{
+margin-left: 20px;
 }
-
-/* Button styling */
-button {
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 5px;
-    background-color: #229799;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    display: block;
-    margin: 20px auto;
-}
-
-button:hover {
-    background-color: cadetblue;
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+    }
+    .left-section, .right-section {
+        width: 100%;
+    }
 }
